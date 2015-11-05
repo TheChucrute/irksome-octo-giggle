@@ -10,18 +10,38 @@ int main()
 	
 	input.open("cartoes.txt");//ler o "cartao" com id e data de validade
 
-	int w/*id*/, x/*ano*/, y/*mes*/, z/*dia*/;
+	int colocada, id, ano, mes, dia;
 
-	input >> w >> x >> y >> z;//bota os valores do "cartao" nas variaveis
+	input >> id >> ano >> mes >> dia;//bota os valores do "cartao" nas variaveis
 
-	cout << "ID: "<< w << endl;//mostra o id
+	cout << "124568079" << endl << endl;//FIXME: deletar
 
+	cout << "Insira o cartão: ";//Pede o número do cartão
 
-	if( x < 2015 ) //averiguar validade
+	cin >> colocada;
+
+	if ( colocada != id )
 	{
-		cout << "Error" << endl;
+		cout << "Erro! Cartão inválido...";
 		return 1;
-	}else
+	}else /*verifica validade*/if( ano < 2016 ) //se o ano for menor que 2016 verificar mes
+	{
+		if( mes < 8)// se o mes for menor que 8 verificar dia
+		{
+			if( dia > 13)//se o dia for maior que 13 finalizar programa
+			{
+				cout << "Erro!!" << endl;
+				return 1;
+			}else
+			{
+				cout << "OK! Passe..." << endl;
+			}
+		}else
+		{
+			cout << "OK! Passe..." << endl;
+		}
+	}
+	else
 	{
 		cout << "OK! Passe..." << endl;
 	}
