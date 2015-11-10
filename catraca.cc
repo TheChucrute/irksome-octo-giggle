@@ -28,7 +28,7 @@ int main()
 	{
 		if( mes < 8)// se o mes for menor que 8 verificar dia
 		{
-			if( dia > 13)//se o dia for maior que 13 finalizar programa
+			if( dia < 13)//se o dia for menor que 13 finalizar programa
 			{
 				cout << "Erro!!" << endl;
 				return 1;
@@ -44,7 +44,7 @@ int main()
 	else
 	{
 		cout << "OK! Passe..." << endl;
-	}
+	}//se tudo checar aparece OK! Passe...
 	input.close();
 
 	//data e hora de entrada do id tal
