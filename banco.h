@@ -8,25 +8,34 @@ using namespace std;
 		public: 
 		
 		void ler();
-		bool entrada();
+		
 
 		private:
 		
 
-	}
+	};
 
 int main(){
 
 
 void ler::banco(){
 
+	input.open("banco.txt");
+
+};
+
+
+
+
+
+
+
 	
 
 }
 
-bool entrada::banco{
 
-}
-}
+
+
 
 

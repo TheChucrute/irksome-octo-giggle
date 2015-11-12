@@ -1,25 +1,34 @@
 #include<iostream>
 #include<fstream>
-#include<vector>
 
 using namespace std;
 
-	class banco{
+	class Banco{
 
 		public: 
 		
-		bool entrada();
-		bool saida();
-		private:
-
-
-
-bool entrada::banco(){
-
-	
-	
+		void ler();	
 		
-}
+
+		private:
+	
+
+	};
+
+void Banco::ler(){
+
+		 ifstream file("banco.txt");
+
+		cout << "estou no ler" << endl;
+
+};
+
+int main(){
+
+	Banco b;
+
+	b.ler();
+}	
 
 
 
@@ -28,37 +37,3 @@ bool entrada::banco(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
