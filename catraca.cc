@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <ctime>
 
 using namespace std;
 
@@ -14,7 +15,7 @@ int main()
 
 	input >> id >> ano >> mes >> dia;//bota os valores do "cartao" nas variaveis
 
-	cout << "124568079" << endl << endl;//FIXME: deletar
+	cout << "1245" << endl << endl;//FIXME: deletar
 
 	cout << "Insira o cartão: ";//Pede o número do cartão
 
@@ -47,9 +48,31 @@ int main()
 	}//se tudo checar aparece OK! Passe...
 	input.close();
 
+	
 	//data e hora de entrada do id tal
+
+	// data e tempo corrente no sistema do PC
+   	time_t now = time(0);
+   
+   	// converte pra string
+   	char* dt = ctime(&now);
+	
+	cout << "ID: " << id << endl;
+   	cout << "Entrou: " << dt << endl;
+	
 	//ler cartao
+
 	//data e hora da saida do id tal
+
+	// data e tempo corrente no sistema do PC
+   	time_t now = time(0);
+   
+   	// converte pra string
+   	char* dt = ctime(&now);
+	
+	cout << "ID: " << id << endl;
+   	cout << "Saiu: " << dt << endl;
+	
 
 	return 0;
 }
