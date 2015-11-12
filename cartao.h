@@ -2,9 +2,9 @@
 
 using namespace std;
 
-friend std::ostream& operator<<(std::ostream&, const Cartao&);
-
 class Cartao{
+
+friend std::ostream& operator<<(std::ostream&, const Cartao&);
 
 private:
 int ID;
@@ -14,7 +14,7 @@ int ano;
 
 public:
 Cartao (int i, int d, int m, int a);
-}
+};
 
 //Cartão tem que receber os dados do txt (relacionado ao cartao)
 
