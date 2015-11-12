@@ -3,32 +3,38 @@
 
 using namespace std;
 
-	class Banco{
+class Banco {
 
-		public: 
-		
-		void ler();	
-		
+public:
 
-		private:
-	
+    void ler();
 
-	};
 
-void Banco::ler(){
+private:
 
-		 ifstream file("banco.txt");
-
-		cout << "estou no ler" << endl;
 
 };
 
-int main(){
+void Banco::ler() {
 
-	Banco b;
+    int ID;
 
-	b.ler();
-}	
+    ifstream file("banco.txt");
+
+    cout << "estou no ler" << endl;
+
+    file >> ID;
+
+    cout << ID << endl;
+
+};
+
+int main() {
+
+    Banco b;
+
+    b.ler();
+}
 
 
 
