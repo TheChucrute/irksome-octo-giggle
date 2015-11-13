@@ -11,23 +11,26 @@ using namespace std;
 class Sistema {
 
 private:
-	void verificar();
+
 	Sistema mostrarHora();
 
-
+public:
+	void verificar();
 };
 
 void Sistema::verificar()
 {
-	
+	Banco b;
+
+	b.ler();
 }
 
 int main() {
 	int banco, cartao;
 	
-	Banco b;
+	Sistema s;
 
-	b.ler();
+	s.verificar();
 
 	cout << "VAI FUNFA" << endl;
 	
