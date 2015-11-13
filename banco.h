@@ -3,36 +3,32 @@
 
 using namespace std;
 
-	class banco{
+class Banco {
 
-		public: 
-		
-		void ler();
-		
+public:
 
-		private:
-		
-
-	};
-
-int main(){
+    void ler();
 
 
-void ler::banco(){
+private:
 
-	input.open("banco.txt");
 
 };
 
+void Banco::ler() {
 
+	int ID, ano, mes, dia;
 
+	ifstream file("banco.txt");
 
+	cout << "estou no ler" << endl;
 
+	file >> ID >> ano >> mes >> dia;
 
+	cout << ID << endl << ano << endl << mes << endl << dia << endl;
 
-	
+};
 
-}
 
 
 

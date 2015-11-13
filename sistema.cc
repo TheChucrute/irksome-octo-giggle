@@ -11,19 +11,29 @@ using namespace std;
 class Sistema {
 
 private:
-	void verificar();
+
 	Sistema mostrarHora();
 
+public:
+	void verificar();
 };
 
 void Sistema::verificar()
 {
-	
+	Banco b;
+
+	b.ler();
 }
 
 int main() {
+	int banco, cartao;
+	
+	Sistema s;
+
+	s.verificar();
 
 	cout << "VAI FUNFA" << endl;
-
+	
 	return 0;
+
 }
