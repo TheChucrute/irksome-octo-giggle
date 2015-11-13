@@ -14,6 +14,7 @@ private:
 	void verificar();
 	Sistema mostrarHora();
 
+
 };
 
 void Sistema::verificar()
@@ -22,8 +23,14 @@ void Sistema::verificar()
 }
 
 int main() {
+	int banco, cartao;
+	
+	Banco b;
+
+	b.ler();
 
 	cout << "VAI FUNFA" << endl;
-
+	
 	return 0;
+
 }

@@ -14,27 +14,19 @@ private:
 
 
 };
-
 void Banco::ler() {
 
-    int banco;
+	int ID, ano, mes, dia;
 
-    ifstream file("banco.txt");
+	ifstream file("banco.txt");
 
-    cout << "estou no ler" << endl;
+	cout << "estou no ler" << endl;
 
-    file >> banco;
 
-    cout << banco << endl;
+	file >> ID >> ano >> mes >> dia;
+
+	cout << ID << endl << ano << endl << mes << endl << dia << endl;
+
+
 
 };
-
-
-
-
-
-
-
-
-
-

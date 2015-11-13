@@ -1,7 +1,7 @@
 #include<fstream>
 #include<iostream>
 #include "banco.h"
-#include "cartao.h"
+#include "cartoes.h"
 
 class Catraca{
 
@@ -40,7 +40,7 @@ int main() {
 
     //int cartao, banco;
     
-    Cartao ca;
+    Cartoes ca;
     Banco b; 	
   
 
@@ -48,13 +48,7 @@ int main() {
     ca.inserir();
     
 
-   
-
-if (cartao==banco){
-
-cout << "entre" << endl;
-
-}else cout << "cartao nao existe" << endl;
+  
 
 
 
