@@ -9,11 +9,10 @@ using namespace std;
 
 
 
+
+
 int main() {
-
-	int id;		
-
-	Banco b1;
+	
 	
 	Cartao c1;
 
