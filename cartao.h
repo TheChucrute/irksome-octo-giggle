@@ -1,34 +1,33 @@
 #include<iostream>
+#include<fstream>
 
 using namespace std;
 
-<<<<<<< HEAD
-
-
-class Cartao{
-    //friend std::ostream& operator<<(std::ostream&, const Cartao&);
-=======
-class Cartao{
-
-friend std::ostream& operator<<(std::ostream&, const Cartao&);
-
->>>>>>> 675d2e8cebde08c5a06b9347c23fe3d6f513f83b
-private:
-int ID;
-int dia;
-int mes;
-int ano;
+class Cartao {
 
 public:
-<<<<<<< HEAD
-Cartao (int ID, int dia, int mes, int ano);
-void ler();
-=======
-Cartao (int i, int d, int m, int a);
->>>>>>> 675d2e8cebde08c5a06b9347c23fe3d6f513f83b
+
+    void ler();
+
+
+private:
+
+
 };
 
-//Cartão tem que receber os dados do txt (relacionado ao cartao)
+void Cartao::ler() {
 
-//Catraca recebe dados e compara com o do txt do banco de dados
-//
+	int ID;
+
+	ifstream file("cartao2.txt");
+
+	cout << "estou no ler do cartao.h" << endl;
+
+
+	file >> ID;
+
+	cout << ID << endl;
+
+
+
+}

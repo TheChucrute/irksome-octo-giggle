@@ -23,10 +23,13 @@ void Sistema::verificar()
 	Banco b;
 
 	b.ler();
+
+	Cartao c;
+	c.ler();
 }
 
 int main() {
-	int banco, cartao;
+	//int banco, cartao;
 	
 	Sistema s;
 
