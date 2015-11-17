@@ -1,38 +1,27 @@
 #include <iostream>
 #include <fstream>
 #include <ctime>
-#include "cartao.h"
+
 #include "banco.h"
 
 
 using namespace std;
 
 
-class Sistema {
-
-private:
-
-	Sistema mostrarHora();
-
-public:
-	void verificar();
-};
-
-void Sistema::verificar()
-{
-	Banco b;
-
-	b.ler();
-}
 
 int main() {
-	int banco, cartao;
+
+	int id;		
+
+	Banco b1;
 	
-	Sistema s;
+	Cartao c1;
 
-	s.verificar();
-
-	cout << "VAI FUNFA" << endl;
+	c1.ler();
+	b1.ler();
+	bool resp = b1.vercartao(c1);
+	
+	cout << resp << endl;
 	
 	return 0;
 

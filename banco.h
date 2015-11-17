@@ -1,6 +1,7 @@
 #include<iostream>
 #include<fstream>
-
+#include<list>
+#include "cartao.h"
 using namespace std;
 
 class Banco {
@@ -8,25 +9,11 @@ class Banco {
 public:
 
     void ler();
-
+    bool vercartao(Cartao&);
 
 private:
-
-
-};
-void Banco::ler() {
-
-	int ID, ano, mes, dia;
-
-	ifstream file("banco.txt");
-
-	cout << "estou no ler" << endl;
-
-
-	file >> ID >> ano >> mes >> dia;
-
-	cout << ID << endl << ano << endl << mes << endl << dia << endl;
-
-
+	list <int> lista;
 
 };
+
+
