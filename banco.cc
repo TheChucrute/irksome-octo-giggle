@@ -7,26 +7,42 @@ using namespace std;
 
 void Banco::ler() {
 
-	int ID;
+	int ID[10];
 
 	ifstream file("banco.txt");
 
-	cout << "estou no ler" << endl;
+	cout << "Estou lendo o banco de dados..." << endl;
+	int i=0;
+	while(i<10){
+	i++;
+	file >> ID[i] ;
 
+	cout << ID[i] << endl;
+	
+	
+	lista.push_back(ID[i]);	
 
-	file >> ID ;
-
-	cout << ID << endl;
-
-	lista.push_back(ID);
-
+	}
 
 }
 
 bool Banco::vercartao(Cartao& c){
 
-//FIXME: INSERIR WHILE AQUI 
+	int c1;
+
+	cout << "Insira o cartao: " << endl;
+	cin >> c1;
 
 
+
+
+	list<int>::iterator iter;
+	for (iter = lista.begin(); iter != lista.end(); iter++){
+	if(*iter==c1)
+		cout<<"Pode passar!"<<endl;
 	return true;
+	}
+	cout<<"Erro: Cartao nao cadastrado!"<<endl;
+	return false;
 }
+	

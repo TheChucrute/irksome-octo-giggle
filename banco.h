@@ -5,7 +5,7 @@
 using namespace std;
 
 class Banco {
-
+friend ostream& operator<<(ostream& s, Banco& lst);
 public:
 
     void ler();
