@@ -1,3 +1,4 @@
+//leandro-ie@hotmail.com;lucascherutti@gmail.com;octavio.carpes10@gmail.com
 #include<iostream>
 #include<fstream>
 #include<list>
@@ -17,7 +18,7 @@ void Banco::ler() {
 	i++;
 	file >> ID[i] ;
 
-	cout << ID[i] << endl;
+	//cout << ID[i] << endl;
 	
 	
 	lista.push_back(ID[i]);	
@@ -38,11 +39,12 @@ bool Banco::vercartao(Cartao& c){
 
 	list<int>::iterator iter;
 	for (iter = lista.begin(); iter != lista.end(); iter++){
-	if(*iter==c1)
-		cout<<"Pode passar!"<<endl;
-	return true;
-	}
+		if(*iter==c1){
+			cout<<"Pode passar!"<<endl;
+			return true;
+		}
 	cout<<"Erro: Cartao nao cadastrado!"<<endl;
 	return false;
+	}
 }
 	

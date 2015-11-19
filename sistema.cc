@@ -1,7 +1,8 @@
+//leandro-ie@hotmail.com;lucascherutti@gmail.com;octavio.carpes10@gmail.com
+
 #include <iostream>
 #include <fstream>
 #include <ctime>
-
 #include "banco.h"
 
 
